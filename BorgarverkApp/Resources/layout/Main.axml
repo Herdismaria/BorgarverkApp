@@ -2,25 +2,82 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <TextView
-        android:text="Bílnúmer"
-        android:textAppearance="?android:attr/textAppearanceMedium"
+    android:layout_height="match_parent"
+    android:layout_margin="30dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView1" />
-    <Spinner
+        android:id="@+id/carNoLayout">
+        <TextView
+            android:text="Veldu bíl"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/carNoLabel" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/carSpinner" />
-    <TextView
-        android:text="Afgreiðslustöð"
-        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/stationLayout">
+        <TextView
+            android:text="Veldu afgreiðslustöð"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/stationLabel" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView2" />
-    <Spinner
+        android:id="@+id/idLayout">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/textInputEditText1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="Sláðu inn færslunúmer" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/stationSpinner" />
+        android:id="@+id/linearLayout1">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/textInputEditText2"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:hint="Lengd [m]" />
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/textInputEditText3"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:hint="breidd [m]" />
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/textInputEditText4"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:hint="flatarmál [fm]" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/textInputEditText5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="Lítrar" />
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/textInputEditText6"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="lítrar/fermeter" />
+    </LinearLayout>
 </LinearLayout>

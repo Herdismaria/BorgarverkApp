@@ -15,7 +15,7 @@ namespace BorgarverkApp
 			// Set our view from the "main" layout resource
 			SetContentView(Resource.Layout.Main);
 
-			Spinner carSpinner = FindViewById<Spinner>(Resource.Id.carSpinner);
+			/*Spinner carSpinner = FindViewById<Spinner>(Resource.Id.carSpinner);
 			Spinner stationSpinner = FindViewById<Spinner>(Resource.Id.stationSpinner);
 
 			ArrayAdapter carAdapter = ArrayAdapter.CreateFromResource(
@@ -31,7 +31,7 @@ namespace BorgarverkApp
 			stationAdapter.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
 
 			carSpinner.Adapter = carAdapter;
-			stationSpinner.Adapter = stationAdapter;
+			stationSpinner.Adapter = stationAdapter;*/
 		}
 	}
 }
