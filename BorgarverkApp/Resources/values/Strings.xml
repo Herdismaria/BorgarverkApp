@@ -2,4 +2,21 @@
 <resources>
 	<string name="hello">Hello World, Click Me!</string>
 	<string name="app_name">BorgarverkApp</string>
+
+	<string-array name="cars">
+		<item>ML-455</item>
+		<item>MU-510</item>
+		<item>BZ-963</item>
+		<item>US-553</item>
+		<item>AZ-R92</item>
+	</string-array>
+
+	<string-array name="stations">
+		<item>Akureyri</item>
+		<item>Hlaðbær Colas</item>
+		<item>Ísafjörður</item>
+		<item>Reyðarfjörður</item>
+		<item>Sauðárkrókur</item>
+	</string-array>
 </resources>
+
