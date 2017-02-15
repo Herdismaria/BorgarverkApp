@@ -3,7 +3,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="30dp">
+    android:layout_margin="50dp">
     <LinearLayout
         android:orientation="vertical"
         android:minWidth="25px"
@@ -11,12 +11,62 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/carNoLayout">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/divider1"
+            android:background="#ff4d64ba"
+            android:fitsSystemWindows="false"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp" />
         <TextView
             android:text="Veldu bíl"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/carNoLabel" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/carButtonLayout"
+            android:showDividers="none">
+            <Button
+                android:text="@string/car1"
+                android:id="@+id/car1Button"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_weight="1" />
+            <Button
+                android:text="@string/car2"
+                android:id="@+id/car2Button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+            <Button
+                android:text="@string/car3"
+                android:id="@+id/car3Button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+            <Button
+                android:text="@string/car4"
+                android:id="@+id/car4Button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+            <Button
+                android:text="@string/car5"
+                android:id="@+id/car5Button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
     </LinearLayout>
     <LinearLayout
         android:orientation="vertical"
@@ -31,53 +81,166 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/stationLabel" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/stationButtonLayout1">
+            <Button
+                android:text="@string/station1"
+                android:id="@+id/station1Button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+            <Button
+                android:text="@string/station2"
+                android:id="@+id/station2Button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+            <Button
+                android:text="@string/station3"
+                android:id="@+id/station3Button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/stationButtonLayout2">
+            <Button
+                android:text="@string/station4"
+                android:id="@+id/station4Button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+            <Button
+                android:text="@string/station5"
+                android:id="@+id/station5Button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+            <Button
+                android:text="@string/station6"
+                android:id="@+id/station6Button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+    <android.support.design.widget.TextInputLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idNumberLayout">
+        <EditText
+            android:id="@+id/idNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Færslunúmer" />
+    </android.support.design.widget.TextInputLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/roadInfoLayout"
+        android:minWidth="25px"
+        android:minHeight="25px">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/divider2"
+            android:background="#ff4d64ba"
+            android:fitsSystemWindows="false"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp" />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <EditText
+                android:id="@+id/roadWidth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:hint="Breidd [m]" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <EditText
+                android:id="@+id/roadLength"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:hint="Lengd [m]" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <EditText
+                android:id="@+id/roadArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:hint="Flatarmál [fm]" />
+        </android.support.design.widget.TextInputLayout>
     </LinearLayout>
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/idLayout">
-        <android.support.design.widget.TextInputEditText
-            android:id="@+id/textInputEditText1"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:hint="Sláðu inn færslunúmer" />
-    </LinearLayout>
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/linearLayout1">
-        <android.support.design.widget.TextInputEditText
-            android:id="@+id/textInputEditText2"
-            android:layout_width="50dp"
-            android:layout_height="match_parent"
-            android:hint="Lengd [m]" />
-        <android.support.design.widget.TextInputEditText
-            android:id="@+id/textInputEditText3"
-            android:layout_width="50dp"
-            android:layout_height="match_parent"
-            android:hint="breidd [m]" />
-        <android.support.design.widget.TextInputEditText
-            android:id="@+id/textInputEditText4"
-            android:layout_width="50dp"
-            android:layout_height="match_parent"
-            android:hint="flatarmál [fm]" />
-    </LinearLayout>
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/linearLayout2">
-        <android.support.design.widget.TextInputEditText
-            android:id="@+id/textInputEditText5"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:hint="Lítrar" />
-        <android.support.design.widget.TextInputEditText
-            android:id="@+id/textInputEditText6"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:hint="lítrar/fermeter" />
+        android:id="@+id/quantityLayout"
+        android:minWidth="25px"
+        android:minHeight="25px">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/divider3"
+            android:background="#ff4d64ba"
+            android:fitsSystemWindows="false"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp" />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/textInputLayout3"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+            <EditText
+                android:id="@+id/quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:hint="Lítrar [l]" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/textInputLayout4">
+            <EditText
+                android:id="@+id/quantityRate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:hint="Lítar/fermeter [l/fm]" />
+        </android.support.design.widget.TextInputLayout>
     </LinearLayout>
 </LinearLayout>
