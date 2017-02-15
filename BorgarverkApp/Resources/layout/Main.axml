@@ -10,7 +10,9 @@
         android:minHeight="25px"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/carNoLayout">
+        android:id="@+id/carNoLayout"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
         <LinearLayout
             android:orientation="horizontal"
             android:minWidth="25px"
@@ -21,13 +23,44 @@
             android:background="#ff4d64ba"
             android:fitsSystemWindows="false"
             android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp" />
-        <TextView
-            android:text="Veldu bíl"
-            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginBottom="5dp"
+            android:paddingBottom="15dp" />
+        <android.support.design.widget.TextInputLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/carNoLabel" />
+            android:id="@+id/idNumberLayout">
+            <EditText
+                android:id="@+id/idNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Færslunúmer" />
+        </android.support.design.widget.TextInputLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout2"
+            android:paddingTop="10dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView1"
+                android:layout_gravity="center_vertical"
+                android:adjustViewBounds="false"
+                android:src="@drawable/ic_directions_car_black_24dp"
+                android:paddingRight="5dp"
+                android:minWidth="15dp"
+                android:minHeight="15dp" />
+            <TextView
+                android:text="Veldu bíl"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/carNoLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical" />
+        </LinearLayout>
         <LinearLayout
             android:orientation="horizontal"
             android:minWidth="25px"
@@ -74,13 +107,32 @@
         android:minHeight="25px"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/stationLayout">
-        <TextView
-            android:text="Veldu afgreiðslustöð"
-            android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/stationLayout"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+        <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/stationLabel" />
+            android:id="@+id/linearLayout3">
+            <ImageView
+                android:src="@drawable/ic_store_mall_directory_black_24dp"
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="false"
+                android:maxWidth="15dp"
+                android:maxHeight="15dp"
+                android:layout_gravity="center_vertical"
+                android:paddingRight="5dp" />
+            <TextView
+                android:text="Veldu afgreiðslustöð"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/stationLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical" />
+        </LinearLayout>
         <LinearLayout
             android:orientation="horizontal"
             android:minWidth="25px"
@@ -113,7 +165,8 @@
             android:minHeight="25px"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/stationButtonLayout2">
+            android:id="@+id/stationButtonLayout2"
+            android:paddingBottom="10dp">
             <Button
                 android:text="@string/station4"
                 android:id="@+id/station4Button"
@@ -134,25 +187,115 @@
                 android:layout_weight="1" />
         </LinearLayout>
     </LinearLayout>
-    <android.support.design.widget.TextInputLayout
+    <LinearLayout
+        android:orientation="vertical"
         android:minWidth="25px"
         android:minHeight="25px"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/idNumberLayout">
-        <EditText
-            android:id="@+id/idNumber"
+        android:id="@+id/informationLayout"
+        android:paddingBottom="10dp">
+        <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Færslunúmer" />
-    </android.support.design.widget.TextInputLayout>
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/roadInfoLayout"
-        android:minWidth="25px"
-        android:minHeight="25px">
+            android:id="@+id/linearLayout4"
+            android:paddingBottom="5dp">
+            <ImageView
+                android:src="@drawable/ic_content_paste_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/infoImage"
+                android:adjustViewBounds="false"
+                android:maxWidth="15dp"
+                android:maxHeight="15dp"
+                android:layout_gravity="center_vertical"
+                android:paddingRight="5dp" />
+            <TextView
+                android:text="Upplýsingar"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/infoLabel"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/roadInfoLayout"
+            android:minWidth="25px"
+            android:minHeight="25px">
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/textInputLayout5">
+                <EditText
+                    android:id="@+id/roadWidth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:hint="Breidd [m]" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/textInputLayout6">
+                <EditText
+                    android:id="@+id/roadLength"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:hint="Lengd [m]" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/textInputLayout7">
+                <EditText
+                    android:id="@+id/roadArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:hint="Flatarmál [fm]" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/quantityLayout"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:paddingBottom="30dp">
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/textInputLayout3">
+                <EditText
+                    android:id="@+id/quantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:hint="Lítrar [l]" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/textInputLayout4">
+                <EditText
+                    android:id="@+id/quantityRate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:hint="Lítar/fermeter [l/fm]" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
         <LinearLayout
             android:orientation="horizontal"
             android:minWidth="25px"
@@ -162,85 +305,22 @@
             android:id="@+id/divider2"
             android:background="#ff4d64ba"
             android:fitsSystemWindows="false"
-            android:paddingTop="5dp"
-            android:paddingBottom="5dp" />
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
-            <EditText
-                android:id="@+id/roadWidth"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="numberDecimal"
-                android:hint="Breidd [m]" />
-        </android.support.design.widget.TextInputLayout>
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
-            <EditText
-                android:id="@+id/roadLength"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="numberDecimal"
-                android:hint="Lengd [m]" />
-        </android.support.design.widget.TextInputLayout>
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
-            <EditText
-                android:id="@+id/roadArea"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="numberDecimal"
-                android:hint="Flatarmál [fm]" />
-        </android.support.design.widget.TextInputLayout>
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp" />
     </LinearLayout>
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/quantityLayout"
-        android:minWidth="25px"
-        android:minHeight="25px">
-        <LinearLayout
-            android:orientation="horizontal"
-            android:minWidth="25px"
-            android:minHeight="25px"
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:id="@+id/divider3"
-            android:background="#ff4d64ba"
-            android:fitsSystemWindows="false"
-            android:paddingTop="5dp"
-            android:paddingBottom="5dp" />
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:id="@+id/textInputLayout3"
-            android:paddingTop="5dp"
-            android:paddingBottom="5dp">
-            <EditText
-                android:id="@+id/quantity"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="numberDecimal"
-                android:hint="Lítrar [l]" />
-        </android.support.design.widget.TextInputLayout>
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:id="@+id/textInputLayout4">
-            <EditText
-                android:id="@+id/quantityRate"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="numberDecimal"
-                android:hint="Lítar/fermeter [l/fm]" />
-        </android.support.design.widget.TextInputLayout>
-    </LinearLayout>
+    <Button
+        android:text="Staðfesta"
+        android:id="@+id/confirmForm"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center_horizontal"
+        android:maxWidth="300dp"
+        android:maxHeight="75dp"
+        android:drawableLeft="@drawable/ic_done_white_24dp"
+        android:autoText="false"
+        android:textAllCaps="true"
+        android:gravity="fill"
+        android:textSize="20dp"
+        android:drawablePadding="10dp"
+        android:paddingStart="70dp" />
 </LinearLayout>

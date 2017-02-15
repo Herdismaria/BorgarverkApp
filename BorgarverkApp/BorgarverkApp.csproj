@@ -97,9 +97,14 @@
     <AndroidResource Include="Resources\mipmap-xxhdpi\Icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\Icon.png" />
     <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\drawable\ic_directions_car_black_24dp.png" />
+    <AndroidResource Include="Resources\drawable\ic_store_mall_directory_black_24dp.png" />
+    <AndroidResource Include="Resources\drawable\ic_content_paste_black_24dp.png" />
+    <AndroidResource Include="Resources\drawable\ic_done_white_24dp.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
+    <Folder Include="Resources\drawable\android\drawable-hdpi\" />
   </ItemGroup>
   <ItemGroup>
     <XamarinComponentReference Include="xamandroidsupportdesign">
