@@ -101,6 +101,7 @@
     <AndroidResource Include="Resources\drawable\ic_store_mall_directory_black_24dp.png" />
     <AndroidResource Include="Resources\drawable\ic_content_paste_black_24dp.png" />
     <AndroidResource Include="Resources\drawable\ic_done_white_24dp.png" />
+    <AndroidResource Include="Resources\layout-large-land\Main.axml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
